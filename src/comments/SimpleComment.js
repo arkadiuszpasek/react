@@ -10,9 +10,7 @@ const SimpleComment = (props) => {
         <img alt="avatar" src={avatar} />
       </a>
       <div className="content">
-        <a href="/" className="author">
-          <a href="/" className="author">{author}</a>
-        </a>
+        <a href="/" className="author">{author}</a>
         <div className="text">
           {text}
         </div>

@@ -3,3 +3,5 @@
 ## What's installed: 
 - ESLint
 - Faker - for mock images and text
+
+- Semantic UI css - ready to use css, for quicker code production

@@ -27,5 +27,6 @@ module.exports = {
     'react/jsx-filename-extension': "off",
     'arrow-body-style': "off",
     'react/state-in-constructor': "off",
+    'react/prefer-stateless-function': "off",
   },
 };

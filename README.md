@@ -3,5 +3,8 @@
 ## What's installed: 
 - ESLint
 - Faker - for mock images and text
+- prop-types - for props validation
 
 - Semantic UI css - ready to use css, for quicker code production
+
+- App uses *Unsplash Api*, which requires key, so at some point in the future the autorizations might fail

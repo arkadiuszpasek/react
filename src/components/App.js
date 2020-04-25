@@ -5,10 +5,12 @@ import faker from 'faker';
 import SimpleComment from '../comments/SimpleComment';
 import ApproveCard from '../comments/ApproveCard';
 import Geo from '../geolocation/Geo';
+import InputApp from '../forms/InputApp';
 
 const App = () => {
   return (
     <div>
+      <InputApp />
       <Geo />
       <ApproveCard actions={['Approve', 'Reject']}>
         <SimpleComment

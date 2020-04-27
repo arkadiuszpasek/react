@@ -4,6 +4,7 @@
 - ESLint
 - Faker - for mock images and text
 - prop-types - for props validation
+- redux, react-redux
 
 - Semantic UI css - ready to use css, for quicker code production
 

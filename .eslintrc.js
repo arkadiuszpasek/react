@@ -29,5 +29,7 @@ module.exports = {
     'react/state-in-constructor': "off",
     'react/prefer-stateless-function': "off",
     'react/forbid-prop-types': "off",
+    'import/prefer-default-export': "off",
+    'react/jsx-one-expression-per-line': "off",
   },
 };

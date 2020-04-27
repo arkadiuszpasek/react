@@ -6,10 +6,14 @@ import SimpleComment from '../comments/SimpleComment';
 import ApproveCard from '../comments/ApproveCard';
 import Geo from '../geolocation/Geo';
 import InputApp from '../forms/InputApp';
+import SongsApp from '../SongsApp/SongsApp';
+import ThunkApp from '../thunk/ThunkApp';
 
 const App = () => {
   return (
     <div>
+      <ThunkApp />
+      <SongsApp />
       <InputApp />
       <Geo />
       <ApproveCard actions={['Approve', 'Reject']}>

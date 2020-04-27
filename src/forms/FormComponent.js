@@ -1,6 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import unsplash from './unsplash';
 import Input from './Input';
 
 class FormComponent extends React.Component {
@@ -9,18 +9,10 @@ class FormComponent extends React.Component {
   onSearchSubmit = (e) => {
     e.preventDefault();
     const { inputValue } = this.state;
+    const { onSearchSubmit } = this.props;
 
-    this.makeQuery(inputValue);
+    onSearchSubmit(inputValue);
   }
-
-  makeQuery = async (inputValue) => {
-    const response = await unsplash.get(
-      '/search/photos', {
-        params: { query: inputValue },
-      },
-    );
-    console.log(response);
-  };
 
   onInputChange = (inputValue) => {
     this.setState({ inputValue });
@@ -42,5 +34,9 @@ class FormComponent extends React.Component {
     );
   }
 }
+
+FormComponent.propTypes = {
+  onSearchSubmit: PropTypes.func.isRequired,
+};
 
 export default FormComponent;

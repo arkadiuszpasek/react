@@ -28,5 +28,6 @@ module.exports = {
     'arrow-body-style': "off",
     'react/state-in-constructor': "off",
     'react/prefer-stateless-function': "off",
+    'react/forbid-prop-types': "off",
   },
 };

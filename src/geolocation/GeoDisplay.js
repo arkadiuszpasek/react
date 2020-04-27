@@ -34,7 +34,7 @@ const GeoDisplay = (props) => {
 };
 
 GeoDisplay.propTypes = {
-  lat: PropTypes.isRequired,
+  lat: PropTypes.number.isRequired,
 };
 
 export default GeoDisplay;

@@ -31,5 +31,6 @@ module.exports = {
     'react/forbid-prop-types': "off",
     'import/prefer-default-export': "off",
     'react/jsx-one-expression-per-line': "off",
+    'no-underscore-dangle': "off",
   },
 };

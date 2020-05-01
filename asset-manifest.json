@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Modern-React-with-Redux-2020-UdemyCourse/static/css/main.60394f57.chunk.css",
+    "main.js": "/Modern-React-with-Redux-2020-UdemyCourse/static/js/main.49a9e29e.chunk.js",
+    "main.js.map": "/Modern-React-with-Redux-2020-UdemyCourse/static/js/main.49a9e29e.chunk.js.map",
+    "runtime-main.js": "/Modern-React-with-Redux-2020-UdemyCourse/static/js/runtime-main.1080f5e5.js",
+    "runtime-main.js.map": "/Modern-React-with-Redux-2020-UdemyCourse/static/js/runtime-main.1080f5e5.js.map",
+    "static/js/2.3fb01d8a.chunk.js": "/Modern-React-with-Redux-2020-UdemyCourse/static/js/2.3fb01d8a.chunk.js",
+    "static/js/2.3fb01d8a.chunk.js.map": "/Modern-React-with-Redux-2020-UdemyCourse/static/js/2.3fb01d8a.chunk.js.map",
+    "index.html": "/Modern-React-with-Redux-2020-UdemyCourse/index.html",
+    "precache-manifest.23053352adcf80741680b64c85fd640c.js": "/Modern-React-with-Redux-2020-UdemyCourse/precache-manifest.23053352adcf80741680b64c85fd640c.js",
+    "service-worker.js": "/Modern-React-with-Redux-2020-UdemyCourse/service-worker.js",
+    "static/css/main.60394f57.chunk.css.map": "/Modern-React-with-Redux-2020-UdemyCourse/static/css/main.60394f57.chunk.css.map",
+    "static/js/2.3fb01d8a.chunk.js.LICENSE.txt": "/Modern-React-with-Redux-2020-UdemyCourse/static/js/2.3fb01d8a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1080f5e5.js",
+    "static/js/2.3fb01d8a.chunk.js",
+    "static/css/main.60394f57.chunk.css",
+    "static/js/main.49a9e29e.chunk.js"
+  ]
+}

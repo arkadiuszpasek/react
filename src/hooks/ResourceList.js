@@ -5,7 +5,14 @@ import useResources from './useResources';
 const ResourceList = ({ resource }) => {
   const resources = useResources(resource);
 
-  return <div>{resources.length}</div>;
+  return (
+    <div className="ui message">
+      <div className="header">
+        {`You fetched ${resource}`}
+      </div>
+      <p>{`Number of records fetched: ${resources.length}`}</p>
+    </div>
+  );
 };
 
 export default ResourceList;

@@ -5,11 +5,16 @@ const UserList = () => {
   const users = useResources('users');
 
   return (
-    <div>
+    <div className="ui list">
       {users.map((user) => {
         return (
-          <div key={user.id}>
-            {user.name}
+          <div className="item">
+            <i className="users icon" />
+            <div className="content">
+              <div key={user.id}>
+                {user.name}
+              </div>
+            </div>
           </div>
         );
       })}

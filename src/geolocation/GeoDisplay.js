@@ -8,7 +8,7 @@ const seasonConfig = {
   },
   summer: {
     iconName: 'sun outline',
-    text: 'It\'s scorching over \'ere!',
+    text: 'It\'s super hot!',
   },
 };
 
@@ -24,7 +24,7 @@ const GeoDisplay = (props) => {
   const season = winterOrSummer(lat, new Date().getMonth());
 
   return (
-    <div>
+    <div className="ui container">
       <h1>
         {seasonConfig[season].text}
         <i className={`icon ${seasonConfig[season].iconName}`} />

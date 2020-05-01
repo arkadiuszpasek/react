@@ -21,7 +21,8 @@ class InputApp extends React.Component {
   render() {
     const { images } = this.state;
     return (
-      <div>
+      <div className="ui container">
+        <p>You can search for an image, then it performs a search using Unsplash API!</p>
         <FormComponent onSearchSubmit={this.onSearchSubmit} />
         <ImageList images={images} />
       </div>

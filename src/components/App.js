@@ -1,50 +1,31 @@
 import React from 'react';
 
-import faker from 'faker';
-
-import SimpleComment from '../comments/SimpleComment';
-import ApproveCard from '../comments/ApproveCard';
 import Geo from '../geolocation/Geo';
 import InputApp from '../forms/InputApp';
 import SongsApp from '../SongsApp/SongsApp';
 import ThunkApp from '../thunk/ThunkApp';
 import TranslateApp from '../translate/TranslateApp';
 import HooksApp from '../hooks/HooksApp';
+import CommentApp from '../comments/CommentsApp';
+import Divider from './Divider';
 
 const App = () => {
   return (
-    <div>
+    <div className="ui inverted">
+      <Divider text="This part was about learning React Hooks!" />
       <HooksApp />
+      <Divider text="This part was about learning React Context!" />
       <TranslateApp />
+      <Divider text="This part was about learning React Thunk" />
       <ThunkApp />
+      <Divider text="This part was about learning Redux" />
       <SongsApp />
+      <Divider text="This part was about handling input" />
       <InputApp />
+      <Divider text="This part was about using logic in rendering components" />
       <Geo />
-      <ApproveCard actions={['Approve', 'Reject']}>
-        <SimpleComment
-          author={faker.name.firstName()}
-          avatar={faker.image.avatar()}
-          text={faker.lorem.words()}
-        />
-      </ApproveCard>
-      <ApproveCard />
-      <div className="ui comments">
-        <SimpleComment
-          author={faker.name.firstName()}
-          avatar={faker.image.avatar()}
-          text={faker.lorem.words()}
-        />
-        <SimpleComment
-          author={faker.name.firstName()}
-          avatar={faker.image.avatar()}
-          text={faker.lorem.words()}
-        />
-        <SimpleComment
-          author={faker.name.firstName()}
-          avatar={faker.image.avatar()}
-          text={faker.lorem.words()}
-        />
-      </div>
+      <Divider text="This part was about reusing components" />
+      <CommentApp />
     </div>
   );
 };

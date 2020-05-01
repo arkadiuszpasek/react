@@ -4,15 +4,18 @@ import React from 'react';
 import LanguageContext from './contexts/LanguageContext';
 
 class LanguageSelector extends React.Component {
+  // eslint-disable-next-line react/static-property-placement
   static contextType = LanguageContext;
 
   render() {
     const { onLanguageChange } = this.context;
     return (
       <div>
-        Select a language:
-        <i className="flag us" onClick={() => onLanguageChange('eng')} />
-        <i className="flag fr" onClick={() => onLanguageChange('fr')} />
+        <h3>
+          Select a language:
+        </h3>
+        <i className="flag large us" onClick={() => onLanguageChange('eng')} />
+        <i className="flag large fr" onClick={() => onLanguageChange('fr')} />
       </div>
     );
   }

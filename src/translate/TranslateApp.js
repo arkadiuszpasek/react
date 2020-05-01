@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-state */
 import React from 'react';
 import UserCreate from './UserCreate';
 import { LanguageStore } from './contexts/LanguageContext';
@@ -14,7 +15,6 @@ class TranslateApp extends React.Component {
   render() {
     return (
       <div className="ui container">
-        This part is about learning Context vs props
         <LanguageStore>
           <LanguageSelector />
           <ColorContext.Provider value="pink">

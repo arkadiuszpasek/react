@@ -1,33 +1,28 @@
 import React from 'react';
 import GeoDisplay from './GeoDisplay';
 import Loader from './Loader';
+import useLocation from './useLocation';
 
-class Geo extends React.Component {
-  // constructor(props) {
-  //   super(props);
+const Geo = () => {
+  const [lat, err] = useLocation();
 
-  //   this.state = { lat: null, err: '' };
-  // }
-  state = { lat: null, err: '' };
-
-  componentDidMount() {
-    window.navigator.geolocation.getCurrentPosition(
-      (position) => this.setState({ lat: position.coords.longitude }),
-      (err) => this.setState({ err: err.message }),
+  let content;
+  if (err) {
+    content = (
+      <div className="ui container negative message">
+        <div className="header">
+          An error occured
+        </div>
+        <p>You probably denied location access</p>
+      </div>
     );
+  } else if (lat) {
+    content = <GeoDisplay lat={lat} />;
+  } else {
+    content = <Loader text="Please allow location access in your browser" />;
   }
 
-  renderContent() {
-    const { err, lat } = this.state;
-
-    if (lat != null) return <GeoDisplay lat={lat} />;
-    if (err !== '') return <div>{err}</div>;
-    return <Loader text="Please allow location access in your browser" />;
-  }
-
-  render() {
-    return this.renderContent();
-  }
-}
+  return content;
+};
 
 export default Geo;

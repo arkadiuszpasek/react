@@ -8,10 +8,12 @@ import Geo from '../geolocation/Geo';
 import InputApp from '../forms/InputApp';
 import SongsApp from '../SongsApp/SongsApp';
 import ThunkApp from '../thunk/ThunkApp';
+import TranslateApp from '../translate/TranslateApp';
 
 const App = () => {
   return (
     <div>
+      <TranslateApp />
       <ThunkApp />
       <SongsApp />
       <InputApp />

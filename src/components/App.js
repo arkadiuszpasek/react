@@ -9,10 +9,12 @@ import InputApp from '../forms/InputApp';
 import SongsApp from '../SongsApp/SongsApp';
 import ThunkApp from '../thunk/ThunkApp';
 import TranslateApp from '../translate/TranslateApp';
+import HooksApp from '../hooks/HooksApp';
 
 const App = () => {
   return (
     <div>
+      <HooksApp />
       <TranslateApp />
       <ThunkApp />
       <SongsApp />

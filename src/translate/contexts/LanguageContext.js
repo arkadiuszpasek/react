@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 // Default language is english
@@ -11,9 +12,10 @@ export class LanguageStore extends React.Component {
   }
 
   render() {
+    const { children } = this.props;
     return (
       <Context.Provider value={{ ...this.state, onLanguageChange: this.onLanguageChange }}>
-        {this.props.children}
+        {children}
       </Context.Provider>
     );
   }
